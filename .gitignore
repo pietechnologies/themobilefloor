@@ -1,0 +1,7 @@
+# Scratch assets from image search (final optimized copies live in assets/img/)
+image-search/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
