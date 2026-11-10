@@ -553,11 +553,17 @@ em { font-style: italic; }
 .modal__since { margin-top: 20px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #b9b0a3; }
 
 .modal__form-side {
-  padding: clamp(24px, 3.4vw, 38px); overflow-y: auto; max-height: min(92vh, 680px);
-  display: flex; flex-direction: column; gap: 14px; background: var(--paper);
+  padding: clamp(22px, 3vw, 32px); overflow-y: auto; max-height: min(92vh, 680px);
+  display: flex; flex-direction: column; gap: 12px; background: var(--paper);
 }
-.modal__form-side .lead-form { border: 0; box-shadow: none; padding: 0; border-radius: 0; }
-.modal__form-side .lead-form h2 { font-size: clamp(1.45rem, 2.6vw, 1.9rem); line-height: 1.14; }
+.modal__form-side .lead-form { border: 0; box-shadow: none; padding: 0; border-radius: 0; gap: 13px; }
+.modal__form-side .lead-form h2 { font-size: clamp(1.35rem, 2.4vw, 1.7rem); line-height: 1.15; }
+/* compact fields — keeps the whole popup on one screen, no scrolling */
+.lead-form--modal .field input,
+.lead-form--modal .field select { padding: 11px 13px; font-size: 15px; }
+.lead-form--modal .form-row { gap: 12px; }
+.lead-form--modal .btn--lg { padding: 14px 22px; }
+.lead-form--modal .lead-form__fine { margin-top: -3px; }
 .modal__decline {
   background: none; border: 0; color: var(--muted); font-size: 13.5px;
   text-decoration: underline; text-underline-offset: 3px; padding: 4px; align-self: center;
@@ -627,10 +633,12 @@ body.modal-open { overflow: hidden; }
   .mobile-cta { display: flex; }
   .header__actions .btn--gold { display: none; }
   .modal__panel { grid-template-columns: 1fr; max-height: 94vh; overflow-y: auto; }
-  .modal__visual { min-height: 190px; }
-  .modal__visual-body { padding: 22px 20px; }
+  .modal__visual { min-height: 130px; }
+  .modal__visual-body { padding: 18px 20px; }
   .modal__visual-body ul, .modal__since { display: none; }
-  .modal__form-side { max-height: none; overflow: visible; padding: 22px 20px 26px; }
+  .modal__visual-body h3 { font-size: 1.2rem; }
+  .modal__flag { margin-bottom: 8px; padding: 5px 11px; }
+  .modal__form-side { max-height: none; overflow: visible; padding: 20px 20px 24px; }
   .modal__close { background: rgba(255, 255, 255, 0.9); }
   .footer__bottom { padding-bottom: 30px; }
 }
