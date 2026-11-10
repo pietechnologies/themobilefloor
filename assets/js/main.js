@@ -20,8 +20,8 @@
   // 1) First submission sends joseph@themobilefloor.com an activation email — click it once.
   // 2) To use another service (Formspree, your own API…), just replace this URL.
   // 3) If sending fails, the form falls back to opening the visitor's mail app.
-  var FORM_ENDPOINT = "https://formsubmit.co/ajax/joseph@themobilefloor.com";
-  var FALLBACK_EMAIL = "joseph@themobilefloor.com";
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/mominaligmb@gmail.com";
+  var FALLBACK_EMAIL = "mominaligmb@gmail.com";
   var FALLBACK_SUBJECT = "New Free Estimate Request — The Mobile Floor";
 
   /* ---------------- Small helpers ---------------- */
